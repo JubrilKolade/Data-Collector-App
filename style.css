@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+ height: 100vh;
+ width: 100%;
+ background: conic-gradient(from -90deg at top left, black, white);
+ font-size: 16px;
+ font-family: 'Secular One', sans-serif;
+ color: #333;
+}
+
+.container {
+    height: 100vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.collector {
+     border: 1px solid lightgrey;
+     border-radius: 5px;
+     width: 450px;
+     margin: auto;
+     background-color: whitesmoke;
+     padding: 0 25px;
+     font-size: 1rem;
+     font-weight: 100;
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.445);
+}
+
+.collector input {
+   
+    box-sizing: border-box;
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid lightgray;
+}
+
+.userName, .userMail, .userNumber, .submit {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.submit {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-left: 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.btn {
+    background: #333;
+    color: white;
+    font-family: inherit;
+}
+
+.success {
+    background: green;
+    color: white;
+    font-family: inherit;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 83%;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.error {
+    background: red;
+    color: white;
+    font-family: inherit;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 83%;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#users {
+    width: 83%;
+    list-style: none;
+    margin-left: 30px;
+
+}
+
+#users li {
+    padding: 10px;
+    border: 1px solid lightgray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: lightgray;
+    color: #333;   
+}
+
+h3 i {
+    margin-left: 150px;
+}
+
+@media (max-width: 360px) {
+    .collector {
+        width: 200px;
+    }
+
+    .userName, .userMail, .userNumber, .submit {
+        margin-top: 10px;
+        margin-left: 5px;
+    
+    }
+    
+    .submit {
+        margin-bottom: 5px;
+    }
+    
+   
+    h3 i {
+        margin-left: 30px;
+    }
+
+    h3{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
