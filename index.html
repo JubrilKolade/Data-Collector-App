@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Data Collector App</title>
+</head>
+<body>
+    <div class="container"> 
+        <div class="collector">
+            <form action="#" id="new-form" class="new-form">
+                <h3>User Data Collector <i class="fa-solid fa-clipboard-list"></i></h3>
+                <div class="msg"></div>
+                <div class="userName">
+                    <label for="name">Name:</label>  <br>
+                   <input type="text" class="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="userMail" >
+                   <label for="name">Mail:</label> <br>
+                   <input type="email" class="email" id="email" placeholder="Enter your mail">
+                </div>
+                <div class="userNumber">
+                    <label for="phone-number"> Phone number:</label> <br>
+                   <input type="text" class="phone-number" id="phone-number" placeholder="Enter your phone number">
+                </div>
+                <div class="submit">
+                    <input  class="btn" type="submit" value="Submit">
+                </div>     
+            </form>
+            <ul id="users"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
